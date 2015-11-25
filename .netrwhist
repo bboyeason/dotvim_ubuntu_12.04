@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/easonlh_cheng/source_code/codebase_32/kernel-3.10/drivers/misc/mediatek/alsps'
+let g:netrw_dirhist_2='/home/easonlh_cheng/source_code/codebase_32/kernel-3.10/drivers/misc/mediatek/alsps/stk3x1x-3311'
+let g:netrw_dirhist_3='/media/data/source_code/ll85/.repo/manifests.git'
