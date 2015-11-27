@@ -56,6 +56,9 @@ let Tlist_Use_Right_Window = 1
 "NERD Tree
 ""
 map <C-n> :NERDTreeToggle<CR>
+"Auto open NERD Tree window once you execute vim without any parameters
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "Auto close NERD Tree window once you close file
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
 "let g:NERDTreeMinimalUI = 1
