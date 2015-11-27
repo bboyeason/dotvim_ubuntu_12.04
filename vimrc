@@ -1,3 +1,23 @@
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+
+Plugin 'gmarik/vundle'
+
+Plugin 'Valloric/YouCompleteMe'
+
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+Plugin 'scrooloose/nerdtree'
+" 这个插件可以显示文件的Git增删状态
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+call vundle#end()
+filetype plugin indent on
+
 syntax on
 filetype on
 set ic
