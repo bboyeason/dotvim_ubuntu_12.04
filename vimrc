@@ -13,7 +13,7 @@ Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'scrooloose/nerdtree'
 " 这个插件可以显示文件的Git增删状态
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 filetype plugin indent on
