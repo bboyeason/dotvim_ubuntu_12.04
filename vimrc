@@ -15,6 +15,8 @@ Plugin 'scrooloose/nerdtree'
 " 这个插件可以显示文件的Git增删状态
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
+Plugin 'bronson/vim-trailing-whitespace'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -73,7 +75,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 "python from powerline.vim import setup as powerline_setup
 "python powerline_setup()
 "python del powerline_setup
-let g:airline_powerline_fonts = 1    
+let g:airline_powerline_fonts = 1
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 " Always show statusline
@@ -81,3 +83,13 @@ set laststatus=2
 
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
+
+""
+"YouCompleteMe
+""
+let g:ycm_path_to_python_interpreter = '/usr/bin/python3'
+
+""
+"vim-trailing-whitespace
+""
+map <leader><space> :FixWhitespace<cr>
